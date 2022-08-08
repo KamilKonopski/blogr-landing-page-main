@@ -4,6 +4,7 @@
 		linear-gradient(to bottom right, $very-light-red 0%, $light-red 100%);
 	border-radius: 0 0 0 20%;
 	height: 65vh;
+	position: relative;
 
 	&__image {
 		display: flex;
@@ -29,7 +30,11 @@
 	}
 
 	&__nav {
-		display: none;
+		background-color: $white;
+		// display: none;
+		left: 0;
+		position: absolute;
+		top: 0;
 	}
 
 	&__hero {
