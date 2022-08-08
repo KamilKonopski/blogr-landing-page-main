@@ -20,33 +20,38 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__logo">
-				<img src="./images/logo.svg" alt="logo Blogr" />
+			<div class="header__image">
+				<div class="header__image--logo">
+					<img src="./images/logo.svg" alt="logo Blogr" />
+				</div>
+				<div class="header__image--burger">
+					<img src="./images/icon-hamburger.svg" alt="menu" />
+				</div>
 			</div>
 			<nav class="header__nav">
-				<li class="header__nav--main">
+				<ul class="header__nav--main">
 					<a href="#">Product</a>
+					<li class="header__nav--product">
+						<a href="#">Overview</a>
+						<a href="#">Pricing</a>
+						<a href="#">Marketplace</a>
+						<a href="#">Features</a>
+						<a href="#">Integrations</a>
+					</li>
 					<a href="#">Company</a>
+					<li class="header__nav--company">
+						<a href="#">About</a>
+						<a href="#">Team</a>
+						<a href="#">Blog</a>
+						<a href="#">Careers</a>
+					</li>
 					<a href="#">Connect</a>
-				</li>
-				<li class="header__nav--product">
-					<a href="#">Overview</a>
-					<a href="#">Pricing</a>
-					<a href="#">Marketplace</a>
-					<a href="#">Features</a>
-					<a href="#">Integrations</a>
-				</li>
-				<li class="header__nav--company">
-					<a href="#">About</a>
-					<a href="#">Team</a>
-					<a href="#">Blog</a>
-					<a href="#">Careers</a>
-				</li>
-				<li class="header__nav--connect">
-					<a href="#">Contact</a>
-					<a href="#">Newsletter</a>
-					<a href="#">Linkedin</a>
-				</li>
+					<li class="header__nav--connect">
+						<a href="#">Contact</a>
+						<a href="#">Newsletter</a>
+						<a href="#">Linkedin</a>
+					</li>
+				</ul>
 				<div class="header__nav-authentication">
 					<button>Login</button>
 					<button>Sign Up</button>
@@ -55,8 +60,8 @@
 			<div class="header__hero">
 				<h1>A modern publishing platform</h1>
 				<p>Grow your audience and build your online brand</p>
-				<button>Start for Free</button>
-				<button>Learn More</button>
+				<button id="start-button">Start for Free</button>
+				<button id="learn-button">Learn More</button>
 			</div>
 		</header>
 		<section class="designed">

@@ -16,7 +16,68 @@ body {
 }
 
 .header {
-  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left 38% bottom 55%, linear-gradient(to bottom right, hsl(13deg, 100%, 72%) 15%, hsl(353deg, 100%, 62%) 50%);
-  border-radius: 0 0 0 25%;
-  height: 55vh;
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left 38% bottom 55%, linear-gradient(to bottom right, hsl(13deg, 100%, 72%) 0%, hsl(353deg, 100%, 62%) 100%);
+  border-radius: 0 0 0 20%;
+  height: 65vh;
+}
+.header__image {
+  display: flex;
+  justify-content: space-between;
+}
+.header__image--logo {
+  padding: 40px 0 0 15px;
+  width: 20%;
+}
+.header__image--logo img {
+  width: 100%;
+}
+.header__image--burger {
+  padding: 45px 15px 0 0;
+  width: 11%;
+}
+.header__image--burger img {
+  width: 100%;
+}
+.header__nav {
+  display: none;
+}
+.header__hero {
+  margin-top: 80px;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.header__hero h1 {
+  padding: 0 45px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header__hero p {
+  font-weight: 400;
+  padding: 0 50px 35px;
+}
+.header__hero button {
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.header__hero button#start-button {
+  color: hsl(353deg, 100%, 62%);
+  background-color: hsl(0deg, 0%, 100%);
+  margin-right: 10px;
+}
+.header__hero button#start-button:hover {
+  background-color: hsl(13deg, 100%, 72%);
+  border-color: hsl(13deg, 100%, 72%);
+  color: hsl(0deg, 0%, 100%);
+}
+.header__hero button#learn-button {
+  background-color: transparent;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+}
+.header__hero button#learn-button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(353deg, 100%, 62%);
 }/*# sourceMappingURL=style.css.map */
