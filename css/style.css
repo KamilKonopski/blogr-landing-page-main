@@ -67,7 +67,7 @@ body {
   flex-direction: column;
   list-style: none;
 }
-.header__nav ul p {
+.header__nav ul a {
   color: hsl(208deg, 49%, 24%);
   font-size: 18px;
   font-weight: 700;
@@ -80,6 +80,9 @@ body {
   display: none;
   flex-direction: column;
   margin: 0 25px;
+}
+.header__nav ul li.show-submenu {
+  display: flex;
 }
 .header__nav ul li a {
   color: hsl(208deg, 49%, 24%);
