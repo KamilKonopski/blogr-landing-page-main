@@ -17,9 +17,6 @@ const showMenu = () => {
 
 burgerMenu.addEventListener('click', showMenu)
 
-
-
-
 productOption.addEventListener('click', () => {
     document.querySelector('.header__nav--product').classList.toggle('show-submenu');
     if(document.querySelector('.header__nav--product').classList.contains('show-submenu')) {
