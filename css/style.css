@@ -250,6 +250,11 @@ body {
   color: hsl(0deg, 0%, 100%);
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .header__hero {
+    margin-top: 100px;
+  }
+}
 .header__hero h1 {
   padding: 0 45px;
   font-weight: 400;
@@ -284,14 +289,9 @@ body {
   margin-right: 10px;
 }
 .header__hero button#start-button:hover {
-  background-color: hsl(13deg, 100%, 72%);
+  background-color: hsl(355deg, 96%, 80%);
   border-color: hsl(13deg, 100%, 72%);
   color: hsl(0deg, 0%, 100%);
-}
-@media screen and (min-width: 1024px) {
-  .header__hero button#start-button:hover {
-    background-color: hsl(355deg, 96%, 80%);
-  }
 }
 .header__hero button#learn-button {
   background-color: transparent;
