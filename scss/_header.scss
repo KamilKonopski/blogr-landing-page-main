@@ -7,6 +7,14 @@
 	margin-bottom: 70px;
 	position: relative;
 
+	@media screen and (min-width: 1024px) {
+		background: url("../images/bg-pattern-intro-desktop.svg") no-repeat left 38%
+				bottom 55%,
+			linear-gradient(to bottom right, $very-light-red 0%, $light-red 100%);
+		border-radius: 0 0 0 100px;
+		height: 50vh;
+	}
+
 	&__image {
 		display: flex;
 		justify-content: space-between;
@@ -14,6 +22,11 @@
 		&--logo {
 			padding: 40px 0 0 15px;
 			width: 20%;
+
+			@media screen and (min-width: 1024px) {
+				width: 8%;
+				margin-left: 120px;
+			}
 
 			& img {
 				width: 100%;
@@ -24,6 +37,10 @@
 			padding: 45px 15px 0 0;
 			width: 11%;
 			transition: 0.3s linear;
+
+			@media screen and (min-width: 1024px) {
+				display: none;
+			}
 
 			& img {
 				width: 100%;
@@ -44,6 +61,18 @@
 		top: 20%;
 		width: 90%;
 
+		@media screen and (min-width: 1024px) {
+			background-color: transparent;
+			box-shadow: 0 0 0 0;
+			color: $white;
+			display: flex;
+			justify-content: space-between;
+			left: 22%;
+			top: 7%;
+			height: 4vh;
+			width: 70%;
+		}
+
 		&.show-menu {
 			left: 5%;
 		}
@@ -53,12 +82,40 @@
 			flex-direction: column;
 			list-style: none;
 
+			@media screen and (min-width: 1024px) {
+				flex-direction: row;
+				position: relative;
+			}
+
 			& a {
 				color: $very-dark-blue;
 				font-size: 18px;
 				font-weight: 700;
 				margin-bottom: 5px;
 				text-decoration: none;
+
+				@media screen and (min-width: 1024px) {
+					color: $grayish;
+					margin-right: 20px;
+					margin-bottom: 0;
+
+					&:hover {
+						border-bottom: 2px solid $white;
+						color: $white;
+					}
+				}
+
+				& .arrow {
+					display: inline-block;
+					background-image: url("../images/icon-arrow-dark.svg");
+					background-repeat: no-repeat;
+					width: 10px;
+					height: 10px;
+
+					@media screen and (min-width: 1024px) {
+						background-image: url("../images/icon-arrow-light.svg");
+					}
+				}
 			}
 
 			& li {
@@ -67,6 +124,35 @@
 				display: none;
 				flex-direction: column;
 				margin: 0 25px;
+
+				&.header__nav--product {
+					@media screen and (min-width: 1024px) {
+						left: -24%;
+						top: 80%;
+					}
+				}
+				&.header__nav--company {
+					@media screen and (min-width: 1024px) {
+						left: 15%;
+						top: 80%;
+					}
+				}
+				&.header__nav--connect {
+					@media screen and (min-width: 1024px) {
+						left: 60%;
+						top: 80%;
+					}
+				}
+
+				@media screen and (min-width: 1024px) {
+					align-items: flex-start;
+					background-color: $white;
+					justify-content: center;
+					padding-left: 10px;
+					width: 150px;
+					position: absolute;
+					height: 15vh;
+				}
 
 				&.show-submenu {
 					display: flex;
@@ -77,6 +163,14 @@
 					font-size: 17px;
 					margin: 0;
 					margin-top: 5px;
+
+					@media screen and (min-width: 1024px) {
+						color: $very-dark-grayish-blue;
+
+						&:hover {
+							color: $very-dark-black-blue;
+						}
+					}
 				}
 			}
 		}
@@ -89,15 +183,33 @@
 			padding-top: 10px;
 			text-align: center;
 
+			@media screen and (min-width: 1024px) {
+				border: 0;
+				flex-direction: row;
+				margin: 0;
+				margin-top: -10px;
+				padding: 0;
+			}
+
 			& button {
 				border: none;
+				cursor: pointer;
 				font-size: 18px;
+
+				@media screen and (min-width: 1024px) {
+					font-size: 16px;
+				}
 
 				&#login {
 					background-color: transparent;
 					color: $very-dark-blue;
 					font-weight: 700;
 					padding-bottom: 5px;
+
+					@media screen and (min-width: 1024px) {
+						color: $grayish;
+						padding-bottom: 0;
+					}
 				}
 
 				&#register {
@@ -110,6 +222,18 @@
 					color: $white;
 					margin: 0 80px;
 					padding: 5px 25px;
+
+					@media screen and (min-width: 1024px) {
+						background: $white;
+						color: $light-red;
+						padding: 5px 30px;
+						margin-left: 20px;
+						transition: 0.2s linear;
+
+						&:hover {
+							background: hsl(355, 96%, 80%);
+						}
+					}
 				}
 			}
 		}
