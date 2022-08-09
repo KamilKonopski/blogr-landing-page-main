@@ -248,16 +248,26 @@
 			padding: 0 45px;
 			font-weight: 400;
 			margin-bottom: 20px;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 42px;
+				font-weight: 700;
+			}
 		}
 
 		& p {
 			font-weight: 400;
 			padding: 0 50px 35px;
+
+			@media screen and (min-width: 1024px) {
+				color: $grayish;
+			}
 		}
 
 		& button {
 			border: 1px solid $white;
 			border-radius: 25px;
+			cursor: pointer;
 			padding: 10px 20px;
 			font-weight: 600;
 			transition: 0.3s;
@@ -268,10 +278,9 @@
 				margin-right: 10px;
 
 				&:hover {
-					background-color: $very-light-red;
+					background-color: hsl(355, 96%, 80%);
 					border-color: $very-light-red;
 					color: $white;
-				}
 			}
 
 			&#learn-button {
