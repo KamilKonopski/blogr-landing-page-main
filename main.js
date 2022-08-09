@@ -1,6 +1,9 @@
 const burgerMenu = document.querySelector('.header__image--burger');
 const burgerIcon = document.querySelector('.header__image--burger img');
 const mobileMenu = document.querySelector('.header__nav');
+const menuOptions = document.querySelectorAll('.header__nav--main p');
+
+console.log(menuOptions)
 
 
 

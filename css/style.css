@@ -67,7 +67,7 @@ body {
   flex-direction: column;
   list-style: none;
 }
-.header__nav ul a {
+.header__nav ul p {
   color: hsl(208deg, 49%, 24%);
   font-size: 18px;
   font-weight: 700;
