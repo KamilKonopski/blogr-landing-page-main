@@ -20,27 +20,27 @@ burgerMenu.addEventListener('click', showMenu)
 productOption.addEventListener('click', () => {
     document.querySelector('.header__nav--product').classList.toggle('show-submenu');
     if(document.querySelector('.header__nav--product').classList.contains('show-submenu')) {
-        document.querySelector('#product img').style.transform = "rotate(180deg)";
+        document.getElementById('product-arrow').style.transform = "rotate(180deg)";
     } else {
-        document.querySelector('#product img').style.transform = "rotate(0)"
+        document.getElementById('product-arrow').style.transform = "rotate(0)"
     }
 })
 
 companyOption.addEventListener('click', () => {
     document.querySelector('.header__nav--company').classList.toggle('show-submenu');
     if(document.querySelector('.header__nav--company').classList.contains('show-submenu')) {
-        document.querySelector('#company img').style.transform = "rotate(180deg)";
+        document.getElementById('company-arrow').style.transform = "rotate(180deg)";
     } else {
-        document.querySelector('#company img').style.transform = "rotate(0)"
+        document.getElementById('company-arrow').style.transform = "rotate(0)"
     }
 })
 
 connectOption.addEventListener('click', () => {
     document.querySelector('.header__nav--connect').classList.toggle('show-submenu');
     if(document.querySelector('.header__nav--connect').classList.contains('show-submenu')) {
-        document.querySelector('#connect img').style.transform = "rotate(180deg)";
+        document.getElementById('connect-arrow').style.transform = "rotate(180deg)";
     } else {
-        document.querySelector('#connect img').style.transform = "rotate(0)"
+        document.getElementById('connect-arrow').style.transform = "rotate(0)"
     }
 })
 
