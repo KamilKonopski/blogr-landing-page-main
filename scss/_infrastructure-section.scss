@@ -8,13 +8,38 @@
 	border-radius: 0 100px 0 100px;
 	margin-top: 250px;
 
+	@media screen and (min-width: 1024px) {
+		background: linear-gradient(
+			to bottom right,
+			$very-dark-desaturated-blue 0%,
+			$very-dark-gray-blue 25%,
+			$very-dark-desaturated-blue 80%
+		);
+		display: flex;
+		height: 30vh;
+		margin-top: 0;
+		margin-bottom: 100px;
+		width: 100%;
+	}
+
 	&__phones {
 		background: url("../images/bg-pattern-circles.svg") no-repeat top;
 		background-size: 150%;
 		transform: rotate(180deg) translate(0%, -4%);
+
+		@media screen and (min-width: 1024px) {
+			width: 200%;
+			background-size: 100%;
+			transform: rotate(180deg) translate(5%, 0%);
+		}
 		& img {
 			transform: rotate(180deg) translate(0%, -45%);
 			width: 100%;
+
+			@media screen and (min-width: 1024px) {
+				transform: rotate(180deg) translate(-30%, 18%);
+				width: 55%;
+			}
 		}
 	}
 
@@ -26,14 +51,28 @@
 		text-align: center;
 		z-index: 1;
 
+		@media screen and (min-width: 1024px) {
+			margin-top: 80px;
+			text-align: left;
+			transform: translateX(-30%);
+		}
+
 		& h2 {
 			font-size: 36px;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 30px;
+			}
 		}
 
 		& p {
 			font-weight: 400;
 			line-height: 150%;
 			margin: 25px 30px;
+
+			@media screen and (min-width: 1024px) {
+				margin: 20px 0;
+			}
 		}
 	}
 }
