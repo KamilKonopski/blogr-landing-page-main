@@ -1,0 +1,20 @@
+.infrastructure {
+	background: linear-gradient(
+		to bottom,
+		$very-dark-desaturated-blue 0%,
+		$very-dark-gray-blue 70%,
+		$very-dark-desaturated-blue 80%
+	);
+	border-radius: 0 100px 0 100px;
+	margin-top: 250px;
+
+	&__phones {
+		background: url("../images/bg-pattern-circles.svg") no-repeat top;
+		background-size: 150%;
+		transform: rotate(180deg) translate(0%, -4%);
+		& img {
+			transform: rotate(180deg) translate(0%, -45%);
+			width: 100%;
+		}
+	}
+}
