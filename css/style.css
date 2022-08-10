@@ -440,15 +440,39 @@ body {
 .tooling {
   margin-top: 60px;
 }
+@media screen and (min-width: 1024px) {
+  .tooling {
+    display: flex;
+  }
+}
 .tooling__laptop {
   background: url("../images/illustration-laptop-mobile.svg") no-repeat center;
-  width: 100%;
   height: 50vh;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .tooling__laptop {
+    background: url("../images/illustration-laptop-desktop.svg") no-repeat;
+    transform: translateX(-32%);
+    height: 81vh;
+    width: 383%;
+  }
 }
 .tooling__text {
   margin-top: 30px;
-  text-align: center;
   padding: 0 25px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .tooling__text {
+    margin: 150px 0 0 -225px;
+    text-align: left;
+    padding: 0;
+    transform: translateX(-45%);
+  }
+  .tooling__text--powerful {
+    margin-top: 50px;
+  }
 }
 .tooling__text h3 {
   color: hsl(208deg, 49%, 24%);
