@@ -319,9 +319,8 @@ body {
   text-align: center;
 }
 .designed__illustration-editor {
-  background: url("../images/illustration-editor-mobile.svg") no-repeat;
+  background: url("../images/illustration-editor-mobile.svg") no-repeat center;
   height: 50vh;
-  margin-left: -15px;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
