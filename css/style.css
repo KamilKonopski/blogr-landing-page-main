@@ -435,4 +435,13 @@ body {
   .infrastructure__text p {
     margin: 20px 0;
   }
+}
+
+.tooling {
+  margin-top: 60px;
+}
+.tooling__laptop {
+  background: url("../images/illustration-laptop-mobile.svg") no-repeat center;
+  width: 100%;
+  height: 50vh;
 }/*# sourceMappingURL=style.css.map */
