@@ -1,0 +1,63 @@
+.footer {
+	align-items: center;
+	background-color: $very-dark-black-blue;
+	border-radius: 0 70px 0 0;
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+	text-align: center;
+
+	@media screen and (min-width: 1024px) {
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	&__logo {
+		margin-top: 60px;
+
+		@media screen and (min-width: 1024px) {
+			margin: 60px 100px 0 160px;
+		}
+	}
+
+	&__links {
+		margin-top: 40px;
+		margin-bottom: 60px;
+
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			justify-content: space-evenly;
+			width: 100%;
+		}
+
+		& h4 {
+			color: $white;
+			font-size: 20px;
+			margin-top: 30px;
+			margin-bottom: 25px;
+		}
+
+		&--product li,
+		&--company li,
+		&--connect li {
+			display: flex;
+			flex-direction: column;
+
+			@media screen and (min-width: 1024px) {
+				// flex-direction: row;
+			}
+
+			& a {
+				color: $grayish;
+				cursor: pointer;
+				font-size: 18px;
+				margin-bottom: 10px;
+				text-decoration: none;
+
+				&:hover {
+					border-bottom: 2px solid $grayish;
+				}
+			}
+		}
+	}
+}

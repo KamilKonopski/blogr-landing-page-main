@@ -17,6 +17,7 @@ body {
 }
 
 .attribution {
+  color: hsl(208deg, 49%, 24%);
   text-align: center;
 }
 
@@ -482,4 +483,59 @@ body {
 .tooling__text p {
   color: hsl(207deg, 13%, 34%);
   line-height: 150%;
+}
+
+.footer {
+  align-items: center;
+  background-color: hsl(240deg, 10%, 16%);
+  border-radius: 0 70px 0 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.footer__logo {
+  margin-top: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    margin: 60px 100px 0 160px;
+  }
+}
+.footer__links {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+.footer__links h4 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.footer__links--product li, .footer__links--company li, .footer__links--connect li {
+  display: flex;
+  flex-direction: column;
+}
+.footer__links--product li a, .footer__links--company li a, .footer__links--connect li a {
+  color: hsl(240deg, 3%, 79%);
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.footer__links--product li a:hover, .footer__links--company li a:hover, .footer__links--connect li a:hover {
+  border-bottom: 2px solid hsl(240deg, 3%, 79%);
 }/*# sourceMappingURL=style.css.map */
